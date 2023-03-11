@@ -16,7 +16,7 @@ Library.DefaultColor = Color3.fromRGB(255,0,0)
 ### Create window
 ```lua
 local Window = Library:Window({
-   Text = "Example Window"
+    Text = "Example Window"
 })
 ```
 
@@ -34,10 +34,10 @@ Library:Notification({
 ### Create Toggle
 ```lua
 local Toggle = Window:Toggle({
-   Text = "Aimbot",
-   Callback = function(bool)
-       print(bool)
-   end
+    Text = "Aimbot",
+    Callback = function(bool)
+        print(bool)
+    end
 })
 ```
 
@@ -52,10 +52,10 @@ Toggle:Set({
 
 ```lua
 Window:Button({
-   Text = "Example Button",
-   Callback = function()
-      print("I have been clicked!")
-   end
+    Text = "Example Button",
+    Callback = function()
+       print("I have been clicked!")
+    end
 })
 ```
 
@@ -63,11 +63,11 @@ Window:Button({
 
 ```lua
 local Dropdown = Window:Dropdown({
-   Text = "Color Scheme",
-   List = {"Dark", "White", "Aqua","Nova"},
-   Callback = function(bool)
-       print(bool)
-   end
+    Text = "Color Scheme",
+    List = {"Dark", "White", "Aqua","Nova"},
+    Callback = function(bool)
+        print(bool)
+    end
 })
 ```
 
@@ -75,13 +75,13 @@ local Dropdown = Window:Dropdown({
 
 ```lua
 Window:Slider({
-   Text = "Example Slider",
-   Default = 10,
-   Minimum = 1,
-   Maximum = 50,
-   Callback = function(value)
-       print(value)
-   end
+    Text = "Example Slider",
+    Default = 10,
+    Minimum = 1,
+    Maximum = 50,
+    Callback = function(value)
+        print(value)
+    end
 })
 ```
 
